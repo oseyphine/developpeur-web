@@ -5,8 +5,6 @@ function Personne(nom, life, atk, def){
 	this.def = def;
 };
 
-const armure = 20;
-
 var hero = new Personne('Hero', 200, 15, 0);
 var minion = new Personne('Minion', 10, 10);
 var lieutenant = new Personne('Lieutenant minion', 30, 30);
@@ -43,7 +41,7 @@ function bonusArmure(armure, personnage){
 
 // STORY 4 : BONUS ARMURE + ATTAQUE LIEUTENANT
 
-bonusArmure(20, hero);
+bonusArmure(0, hero);
 
 function attaque(attaquant, defenseur){
 	console.log("La vie de " + defenseur.nom + " est de : " + defenseur.life);
@@ -55,9 +53,8 @@ function attaque(attaquant, defenseur){
 		defenseur.life = defenseur.life - (attaquant.atk - defenseur.def);
 		defenseur.def = 0;
 	} else {
-		defenseur.def = defenseur.def - attaquant.atk;
+		defenseur.life = defenseur.life - attaquant.atk;
 	}
-
 
 	console.log("La vie de " + defenseur.nom + " est de : " + defenseur.life);
  	console.log("L'armure de " + defenseur.nom + " est de : " + defenseur.def);
