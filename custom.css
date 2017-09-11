@@ -1,0 +1,10 @@
+body{
+	text-align: center;
+}
+section .joueurs, .btnAttaque{
+	display: inline-block;
+}
+img{
+	width: 100px;
+	height: 100px;
+}

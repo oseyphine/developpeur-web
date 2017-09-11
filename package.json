@@ -1,0 +1,22 @@
+{
+  "name": "developpeur-web",
+  "version": "1.0.0",
+  "description": "Ce repo centralise les ressources de la formation développeur web : [wiki](https://github.com/SimplonReunion/developpeur-web/wiki)",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oseyphine/developpeur-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oseyphine/developpeur-web/issues"
+  },
+  "homepage": "https://github.com/oseyphine/developpeur-web#readme",
+  "devDependencies": {
+    "webpack": "^3.5.6"
+  }
+}
