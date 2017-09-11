@@ -67,5 +67,3 @@ export class Heros extends Character{
 		}
 	};
 };
-
-// var hero = new Heros('Hero', 200, 15, 0);
